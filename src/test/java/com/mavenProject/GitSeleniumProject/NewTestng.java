@@ -46,6 +46,10 @@ public class NewTestng {
 	      driver= new InternetExplorerDriver();
 		
 	}
+	else
+	{
+		throw new RuntimeException("browser name is not available");
+	}
 	 /* System.setProperty("webdriver.chrome.driver", "Resource/chromedriver.exe");
 	    driver= new ChromeDriver();*/
 	    driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
